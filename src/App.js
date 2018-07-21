@@ -7,7 +7,7 @@ import ipfs from './ipfs';
 import storehash from './storehash';
 
 class App extends Component {
- 
+
     state = {
       ipfsHash:null,
       buffer:'',
@@ -15,16 +15,16 @@ class App extends Component {
       blockNumber:'',
       transactionHash:'',
       gasUsed:'',
-      txReceipt: ''   
+      txReceipt: ''
     };
-   
+
     captureFile =(event) => {
         event.stopPropagation()
         event.preventDefault()
         const file = event.target.files[0]
         let reader = new window.FileReader()
         reader.readAsArrayBuffer(file)
-        reader.onloadend = () => this.convertToBuffer(reader)    
+        reader.onloadend = () => this.convertToBuffer(reader)
       };
 
     convertToBuffer = async(reader) => {
@@ -48,7 +48,7 @@ class App extends Component {
         }); //await for getTransactionReceipt
 
         await this.setState({blockNumber: this.state.txReceipt.blockNumber});
-        await this.setState({gasUsed: this.state.txReceipt.gasUsed});    
+        await this.setState({gasUsed: this.state.txReceipt.gasUsed});
       } //try
     catch(error){
         console.log(error);
@@ -60,7 +60,7 @@ class App extends Component {
 
       //bring in user's metamask account address
       const accounts = await web3.eth.getAccounts();
-     
+
       console.log('Sending from Metamask account: ' + accounts[0]);
 
       //obtain contract address from storehash.js
@@ -68,46 +68,56 @@ class App extends Component {
       this.setState({ethAddress});
 
       //save document to IPFS,return its hash#, and set hash# to state
-      //https://github.com/ipfs/interface-ipfs-core/blob/master/SPEC/FILES.md#add 
+      //https://github.com/ipfs/interface-ipfs-core/blob/master/SPEC/FILES.md#add
       await ipfs.add(this.state.buffer, (err, ipfsHash) => {
         console.log(err,ipfsHash);
-        //setState by setting ipfsHash to ipfsHash[0].hash 
+        //setState by setting ipfsHash to ipfsHash[0].hash
         this.setState({ ipfsHash:ipfsHash[0].hash });
 
-        // call Ethereum contract method "sendHash" and .send IPFS hash to etheruem contract 
+        // call Ethereum contract method "sendHash" and .send IPFS hash to etheruem contract
         //return the transaction hash from the ethereum contract
         //see, this https://web3js.readthedocs.io/en/1.0/web3-eth-contract.html#methods-mymethod-send
-        
-        storehash.methods.sendHash(this.state.ipfsHash).send({
-          from: accounts[0] 
-        }, (error, transactionHash) => {
-          console.log(transactionHash);
-          this.setState({transactionHash});
-        }); //storehash 
-      }) //await ipfs.add 
-    }; //onSubmit 
-  
+
+        // storehash.methods.mint().send({
+        //   from: accounts[0]
+        // }, (error, transactionHash) => {
+        //   console.log(transactionHash);
+        //   this.setState({transactionHash});
+        // }); //storehash
+
+          storehash.methods.mint(this.state.ipfsHash).send({
+            from: accounts[0]
+          }, (error, transactionHash) => {
+            console.log(transactionHash);
+            this.setState({transactionHash});
+          }); //storehash
+
+
+
+      }) //await ipfs.add
+    }; //onSubmit
+
     render() {
-      
+
       return (
         <div className="App">
           <header className="App-header">
             <h1> Ethereum and InterPlanetary File System(IPFS) with Create React App</h1>
           </header>
-          
+
           <hr />
 
         <Grid>
           <h3> Choose file to send to IPFS </h3>
           <Form onSubmit={this.onSubmit}>
-            <input 
+            <input
               type = "file"
               onChange = {this.captureFile}
             />
-             <Button 
-             bsStyle="primary" 
-             type="submit"> 
-             Send it 
+             <Button
+             bsStyle="primary"
+             type="submit">
+             Send it
              </Button>
           </Form>
 
@@ -121,7 +131,7 @@ class App extends Component {
                     <th>Values</th>
                   </tr>
                 </thead>
-               
+
                 <tbody>
                   <tr>
                     <td>IPFS Hash # stored on Eth Contract</td>
@@ -145,7 +155,7 @@ class App extends Component {
                   <tr>
                     <td>Gas Used</td>
                     <td>{this.state.gasUsed}</td>
-                  </tr>                
+                  </tr>
                 </tbody>
             </Table>
         </Grid>
