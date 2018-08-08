@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<body>
+    <button id="btn">exec</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="node_modules/web3/dist/web3.min.js"></script> 
+    <script>
+        $(function(){
+            $("#btn").click(function(){
+                var web3 = new Web3();
+                web3.setProvider(new web3.providers.HttpProvider('http://localhost:7545'));
+
+                var address = "0x668aa6e148cf779c923d995a98578f5e87a78f63";
+
+                var abi = [
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "x",
+                "type": "string"
+            }
+        ],
+        "name": "sendHash",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getHash",
+        "outputs": [
+            {
+                "name": "x",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+];
+                var contract = web3.eth.contract(abi).at(address);
+
+                var response = contract.getHash.call();
+
+                alert(response);
+            });
+        });
+    </script>
+</body>
+</html>
