@@ -29,11 +29,11 @@ contract ERC721 {
 
 import "./ERC721.sol";
 */
-contract EthDocsTokens is ERC721 {
+contract AmisIpfsTokens is ERC721 {
   /*** CONSTANTS ***/
 
-  string public constant name = "EthDocsToken";
-  string public constant symbol = "EDT";
+  string public constant name = "Amis Modular IPFS Security token";
+  string public constant symbol = "AMISt";
 
   bytes4 constant InterfaceID_ERC165 =
     bytes4(keccak256('supportsInterface(bytes4)'));
