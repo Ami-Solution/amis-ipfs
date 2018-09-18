@@ -1,7 +1,6 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.4.25;
 import "github.com/Arachnid/solidity-stringutils/strings.sol";
-
-contract IpfsFactory {
+contract IpfsUrl {
     using strings for *;
     string ipfsUrls = "https://ipfs.io/ipfs/";
     uint id = 0;
