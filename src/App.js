@@ -102,7 +102,7 @@ class App extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <h1> EthDocs BETA</h1>
+            <h1> Amis IPFS BETA</h1>
           </header>
 
           <hr />
