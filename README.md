@@ -59,4 +59,4 @@ Original Work: This is a proud work by MICHAEL CHAN [@mcchan1](https://github.co
 Derivative Work:
 `eth-ipfs` is adding a few new features & thanks to contributors:
 
-* Ami Solution [@ami-solution](https://github.com/ami-solution/)
+* Ami Solution [@ami-solution](https://github.com/ami-solution/eth-ipfs)
