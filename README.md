@@ -31,7 +31,7 @@ $ ipfs init
 We are currently using Ethereum blockchain clients to demonstrate the persistence of IPFS hashes.
 If you're looking for a hassle-free minimal setup, you may install [Ganache](https://truffleframework.com/ganache) & initiate a private chain with custom port on the host.
 
-Deploy this simple storage [contract](contracts/StoreHash.sol) on Remix IDE(https://remix.ethereum.org/) and update the same value for the constant variable `address` [here](src/storehash.js#5).
+Deploy this simple storage [contract](contracts/AmisIpfsTokens.sol) on Remix IDE(https://remix.ethereum.org/) and update the same value for the constant variable `address` [here](src/storehash.js#5).
 
 PS: In case of private ethereum networks, be sure to update the web3 definition values in the `src/web3.js` with `const web3 = new Web3(new Web3.providers.HttpProvider("http://<<HOST-IP>>:<<PORT>>"));`
 
