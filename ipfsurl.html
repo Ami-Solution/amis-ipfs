@@ -8,7 +8,7 @@
         $(function(){
             $("#btn").click(function(){
                 var web3 = new Web3();
-                web3.setProvider(new web3.providers.HttpProvider('https://ropsten.infura.io/DZQCAMdvawWxFyA6OOtD'));
+                web3.setProvider(new web3.givenProvider || "http://localhost:8545");
                 var address = "0xdf71BA382Fe1861B4197DE77759349d7ccf2783E";
 
                 var abi = [
