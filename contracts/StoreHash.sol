@@ -1,10 +1,10 @@
 
-//0xb84b12e953f5bcf01b05f926728e855f2d4a67a9  contract address on rinkeby
-//deployed using remix 
+//0x9c5b2de90000b29ffec374c857ed5db77e46941e  contract address on rinkeby
+//deployed using remix
 
 contract Contract {
  string ipfsHash;
- 
+
  function sendHash(string x) public {
    ipfsHash = x;
  }

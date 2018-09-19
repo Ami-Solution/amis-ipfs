@@ -2,7 +2,7 @@ import web3 from './web3';
 
 //access our local copy to contract deployed on rinkeby testnet
 //use your own contract address
-const address = '0xb84b12e953f5bcf01b05f926728e855f2d4a67a9';
+const address = '0x9c5b2de90000b29ffec374c857ed5db77e46941e';
 //use the ABI from your contract
 const abi = [
   {

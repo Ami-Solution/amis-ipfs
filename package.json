@@ -1,5 +1,5 @@
 {
-  "name": "eth-ipfs",
+  "name": "wan-ipfs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,13 +10,30 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-dropzone": "^4.2.8",
-    "react-scripts": "1.1.0",
+    "react-scripts": "^2.0.0-next.a671462c",
+    "source-map-explorer": "^1.6.0",
     "web3": "^1.0.0-beta.26"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "upload": "node upload.js"
+  },
+  "homepage": "./",
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
   }
 }
