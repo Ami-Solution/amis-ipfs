@@ -22,9 +22,10 @@ run `npm run build` to make a build in the build directory. You can then upload 
     size: 2426590 } ]
 
 ```
-Your url would be: https://ipfs.infura.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ but its available on all ipfs nodes (after a while):
-http://localhost:8080/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
-http://ipfs.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
+Your url would be: 
+- https://ipfs.infura.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ but it's available on all ipfs nodes (after a while):
+- http://localhost:8080/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
+- http://ipfs.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
 
 
 First time loading from IPFS takes a while and might require an F5 ;)
