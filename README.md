@@ -18,13 +18,13 @@ run `npm run build` to make a build in the build directory. You can then upload 
 ```
   ...
   { path: 'build',
-    hash: 'QmXCSxk3ECr65ZGPYkHbn1ayREkjomGBhnJF4rAvDca9m4',
+    hash: 'Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ',
     size: 2426590 } ]
 
 ```
-Your url would be: https://ipfs.infura.io/ipfs/QmXCSxk3ECr65ZGPYkHbn1ayREkjomGBhnJF4rAvDca9m4 but its available on all ipfs nodes (after a while):
-http://localhost:8080/ipfs/QmXCSxk3ECr65ZGPYkHbn1ayREkjomGBhnJF4rAvDca9m4/ or
-http://ipfs.io/ipfs/QmXCSxk3ECr65ZGPYkHbn1ayREkjomGBhnJF4rAvDca9m4/ or
+Your url would be: https://ipfs.infura.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ but its available on all ipfs nodes (after a while):
+http://localhost:8080/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
+http://ipfs.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
 
 
 First time loading from IPFS takes a while and might require an F5 ;)
