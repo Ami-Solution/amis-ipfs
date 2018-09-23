@@ -14,7 +14,7 @@ To recreate this site first create the contract (StoreHash.sol). You can use Rem
 Then update the contract address in storehash.js with your contract address (and ABI if you changed the contract). Then run the app with `npm start`
 
 ### Make production build
-run `npm run build` to make a build in the build directory. You can then upload the complete dApp to IPFS to run it from the cload with `npm run upload`. You can find the url by looking at the last hash:
+run `npm run build` to make a build in the build directory. You can then upload the complete dApp to IPFS to run it from the cloud with `npm run upload`. You can find the url by looking at the last hash:
 ```
   ...
   { path: 'build',
