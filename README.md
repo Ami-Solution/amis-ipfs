@@ -14,13 +14,14 @@ To recreate this site first create the contract (StoreHash.sol). You can use Rem
 Then update the contract address in storehash.js with your contract address (and ABI if you changed the contract). Then run the app with `npm start`
 
 ### Heroku Deployment
-git clone https://github.com/Ami-Solution/amis-ipfs
-cd amis-ipfs
-npm install
-heroku create
-heroku apps:rename newname
-git push heroku master
-https://amis-chain-ipfs.herokuapp.com/
+Step by step deployment process
+- git clone https://github.com/Ami-Solution/amis-ipfs
+- cd amis-ipfs
+- npm install
+- heroku create
+- heroku apps:rename newname
+- git push heroku master
+- check web ui access https://amis-chain-ipfs.herokuapp.com/
 
 ### Make production build
 run `npm run build` to make a build in the build directory. You can then upload the complete dApp to IPFS to run it from the cloud with `npm run upload`. You can find the url by looking at the last hash:
