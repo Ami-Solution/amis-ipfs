@@ -51,7 +51,7 @@ $ npm run start
 ```
 
 ![Voila](src/images/eth-ipfs.png)
-Try it here [https://ami-solution.github.io/eth-ipfs/ipfsurl.html](https://ami-solution.github.io/eth-ipfs/ipfsurl.html)
+Try it here [https://ami-solution.github.io/amis-ipfs/ipfsurl.html](https://ami-solution.github.io/amis-ipfs/ipfsurl.html)
 
 ## Contribution
 
