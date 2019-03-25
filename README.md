@@ -1,6 +1,6 @@
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
-A simple DApp to upload a document to IPFS and then store the IPFS hash on the Amischain blockchain. Once the IPFS hash number is sent to the Amischain blockchain, the user will receive a transaction receipt as well as a genuine ERC721 collectible token . We will use Create-React-App framework to make an ubiquitous front-end available on Herokuapp and ipfs. This Dapp works with any user that has MetaMask installed in their browser.
+A simple DApp to upload a document to IPFS and then store the IPFS hash on the Amischain blockchain. Once the IPFS hash number is sent to the Amischain blockchain, the user will receive a transaction receipt as well as a genuine ERC721 collectible token . We will use Create-React-App framework to make an ubiquitous front-end available on Herokuapp and ipfs. This Dapp works with any user that has MetaMask/Scatter installed in their browser.
 
 This repository was created originally for this great tutorial and has been adapted to work with Amischain
 https://itnext.io/build-a-simple-ethereum-interplanetary-file-system-ipfs-react-js-dapp-23ff4914ce4e
@@ -8,7 +8,7 @@ https://itnext.io/build-a-simple-ethereum-interplanetary-file-system-ipfs-react-
 ## Installation
 
 ### Deploy contract
-To recreate this site first create the contract (StoreHash.sol). You can use Remix(https://remix.ethereum.org) for that together with MetaMask(https://Metamask.io/). Create a new file, paste the contents of the .sol file and deploy.
+To recreate this site first create the contract (StoreHash.sol). You can use Remix(https://remix.ethereum.org) for that together with MetaMask(https://Metamask.io/) or [scatter](https://get-scatter.com). Create a new file, paste the contents of the .sol file and deploy.
 
 https://ropsten.etherscan.io/address/0xdf71BA382Fe1861B4197DE77759349d7ccf2783E#code ipfsH
 https://ropsten.etherscan.io/address/0xe830cf8738b77cc7cbed522387ab12959a120e25#code AmisIpfsTokens
