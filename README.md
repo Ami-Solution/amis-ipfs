@@ -8,7 +8,7 @@ https://itnext.io/build-a-simple-ethereum-interplanetary-file-system-ipfs-react-
 ## Installation
 
 ### Deploy contract
-To recreate this site first create the contract (StoreHash.sol). You can use Remix(https://remix.ethereum.org) for that together with [MetaMask](https://Metamask.io/) or [Scatter](https://get-scatter.com). Create a new file, paste the contents of the .sol file and deploy.
+To recreate this site first create the contract (StoreHash.sol). You can use [Remix](https://remix.ethereum.org) for that together with [MetaMask](https://Metamask.io/) or [Scatter](https://get-scatter.com). Create a new file, paste the contents of the .sol file and deploy.
 
 https://ropsten.etherscan.io/address/0xdf71BA382Fe1861B4197DE77759349d7ccf2783E#code ipfsH
 https://ropsten.etherscan.io/address/0xe830cf8738b77cc7cbed522387ab12959a120e25#code AmisIpfsTokens
