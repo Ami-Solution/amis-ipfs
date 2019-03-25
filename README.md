@@ -25,7 +25,7 @@ Step by step deployment process
 - heroku create
 - heroku apps:rename newname
 - git push heroku master
-- check web ui access https://amis-chain-ipfs.herokuapp.com/
+- check web ui access [Amis-Chain-Ipfs](https://amis-chain-ipfs.herokuapp.com/)
 
 ### Make production build
 run `npm run build` to make a build in the build directory. You can then upload the complete dApp to IPFS to run it from the cloud with `npm run upload`. You can find the url by looking at the last hash:
@@ -40,10 +40,9 @@ Your url would be:
 - https://ipfs.infura.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ but it's available on all ipfs nodes (after a while):
 - http://localhost:8080/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
 - http://ipfs.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
-
+- https://gateway.ipfs.io/ipfs/Qmf7CyrX3srXoDNAtNAYLiP4yPDXcZ3d51rk3Mg5eJAkpo
 
 First time loading from IPFS takes a while and might require an F5 ;)
-
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
