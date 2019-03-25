@@ -32,15 +32,15 @@ run `npm run build` to make a build in the build directory. You can then upload 
 ```
   ...
   { path: 'build',
-    hash: 'Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ',
+    hash: 'QmZsKifgMvQxeo7J5E8CrvGtKzSdGQ232Y256wbH17q3gA',
     size: 2426590 } ]
 
 ```
 Your url would be: 
-- https://ipfs.infura.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ but it's available on all ipfs nodes (after a while):
-- http://localhost:8080/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
-- http://ipfs.io/ipfs/Qmc5m94Gu7z62RC8waSKkZUrCCBJPyHbkpmGzEePxy2oXJ/ or
-- https://gateway.ipfs.io/ipfs/Qmf7CyrX3srXoDNAtNAYLiP4yPDXcZ3d51rk3Mg5eJAkpo
+- https://ipfs.infura.io/ipfs/QmZsKifgMvQxeo7J5E8CrvGtKzSdGQ232Y256wbH17q3gA but it's available on all ipfs nodes (after a while):
+- http://localhost:8080/ipfs/QmZsKifgMvQxeo7J5E8CrvGtKzSdGQ232Y256wbH17q3gA/ or
+- http://ipfs.io/ipfs/QmZsKifgMvQxeo7J5E8CrvGtKzSdGQ232Y256wbH17q3gA/ or
+- https://gateway.ipfs.io/ipfs/QmZsKifgMvQxeo7J5E8CrvGtKzSdGQ232Y256wbH17q3gA
 
 First time loading from IPFS takes a while and might require an F5 ;)
 
