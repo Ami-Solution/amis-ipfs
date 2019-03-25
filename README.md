@@ -1,5 +1,7 @@
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
+<img align="center" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/public/amisipfs" alt="AMIS-CHAIN-IPFS" width="100"/>
+
 A simple DApp to upload a document to IPFS and then store the IPFS hash on the Amischain blockchain. Once the IPFS hash number is sent to the Amischain blockchain, the user will receive a transaction receipt as well as a genuine ERC721 collectible token . We will use Create-React-App framework to make an ubiquitous front-end available on Herokuapp and ipfs. This Dapp works with any user that has MetaMask/Scatter installed in their browser.
 
 This repository was created originally for this great tutorial and has been adapted to work with Amischain
