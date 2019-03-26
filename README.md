@@ -1,9 +1,8 @@
-
-<img src="https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true" alt="amis-newlogo" width="200"/>
-
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
-<img align="center" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/public/amischainipfs.png" alt="AMIS-CHAIN-IPFS" width="450"/>
+<img align="left" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/public/amischainipfs.png" alt="AMIS-CHAIN-IPFS" width="450"/>
+
+<img  align="right" src="https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true" alt="amis-newlogo" width="200"/>
 
 A simple DApp to upload a document to IPFS and then store the IPFS hash on the Amischain blockchain. Once the IPFS hash number is sent to the Amischain blockchain, the user will receive a transaction receipt as well as a genuine ERC721 collectible token . We will use Create-React-App framework to make an ubiquitous front-end available on Herokuapp and ipfs. This Dapp works with any user that has MetaMask/Scatter installed in their browser.
 
@@ -13,7 +12,7 @@ https://itnext.io/build-a-simple-ethereum-interplanetary-file-system-ipfs-react-
 ## Installation
 
 ### Deploy contract
-To recreate this site first create the contract (StoreHash.sol). You can use [Remix](https://remix.ethereum.org) for that together with [MetaMask](https://Metamask.io/) or [Scatter](https://get-scatter.com). Create a new file, paste the contents of the .sol file and deploy.
+To recreate this site first create the contract [StoreHash.sol](https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/contracts/StoreHash.sol). You can use [Remix](https://remix.ethereum.org) for that together with [MetaMask](https://Metamask.io/) or [Scatter](https://get-scatter.com). Create a new file, paste the contents of the .sol file and deploy.
 
 https://ropsten.etherscan.io/address/0xdf71BA382Fe1861B4197DE77759349d7ccf2783E#code ipfsH
 https://ropsten.etherscan.io/address/0xe830cf8738b77cc7cbed522387ab12959a120e25#code AmisIpfsTokens
