@@ -1,7 +1,5 @@
 
-
-![Alt text](https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true)
-<img src="https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true">
+<img src="https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true" alt="amis-newlogo" width="200"/>
 
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
