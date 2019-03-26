@@ -1,3 +1,5 @@
+<img align="left" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg" alt="amis-newlogo" width="100"/>
+
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
 <img align="center" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/public/amischainipfs.png" alt="AMIS-CHAIN-IPFS" width="450"/>
