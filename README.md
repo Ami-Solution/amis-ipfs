@@ -1,6 +1,6 @@
 # Simple Amis chain + Inter Planetary File System (IPFS) + React.js DApp
 
-<img align="left" src="https://raw.githubusercontent.com/Ami-Solution/amis-ipfs/master/public/amischainipfs.png" alt="AMIS-CHAIN-IPFS" width="450"/>
+<img align="left" src="https://gateway.ipfs.io/ipfs/Qmf2ZcDnfCvAfwF7V5uuugGzvBWHXMJyn77j4GPygVVxrq" alt="AMIS-CHAIN-IPFS" width="450"/>
 
 <img  align="right" src="https://raw.github.com/Ami-Solution/amis-ipfs/master/src/amis-chain-ipfs-logo.svg?sanitize=true" alt="amis-newlogo" width="200"/>
 
